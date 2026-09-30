@@ -1,3 +1,83 @@
 body{
-    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #261919;
+    overflow-x: hidden;
+    color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    padding: 15px 5%;
+    box-shadow: 10px 5px 8px 2px rgba(0, 0, 0, 0.2);
+    
+    .bandeiras{
+        /* Controla a div das bandeiras */
+        display: flex;
+        gap: 6px;
+    }
+    .bandeiras img{
+        /* Controla somente a img das bandeiras */
+        width: 26px;
+        height: 16px;
+    }
+
+    .menu ul{
+        /* Controla a lista (ul) dentro da classe menu */
+        display: flex;
+        list-style: none;
+        gap: 24px;
+
+    }
+
+    .menu a{
+        /* Controla os itens a dentro da classe menu */
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: bolder;
+    }
+
+    .menu a:hover {
+    color: pink;
+    }
+}
+
+div.universo{
+    display: flex;
+    background-color: rgb(38, 25, 25);
+    justify-content: space-between; 
+    align-items: center;  
+    padding: 15px 5%;
+
+    div.caixa_texto{
+        width: 60%;
+        max-width: 850px;
+        
+        h1{
+            color: white;
+            text-shadow: 0 0 10px #D7F95E;
+            transform: translateY(-10px);
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(imagens/bg_footer.webp);
+    background-size: cover;
+    background-position: center;
+
+    .rede{
+        width: 36px;
+        height: auto;
+    }
+    
 }
